@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondopantalla"
+    android:layout_height="match_parent"
+    tools:context=".Mensajes">
+
+    <EditText
+        android:id="@+id/txtMensajeRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="ingrese un recordatorio"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRecordatorio"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/customer_buttoms"
+        android:text="procesar recordatorio"
+        app:layout_constraintEnd_toEndOf="@+id/txtMensajeRecordatorio"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/txtMensajeRecordatorio"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeRecordatorio" />
+
+    <TextView
+        android:id="@+id/txtSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnRecordatorio"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="@+id/btnRecordatorio"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecordatorio" />
+
+    <Button
+        android:id="@+id/btnSalirMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="@+id/txtSalida"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="@+id/txtSalida"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalida" />
+</android.support.constraint.ConstraintLayout>

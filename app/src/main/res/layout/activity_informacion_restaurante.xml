@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopantalla"
+    tools:context=".InformacionRestaurante">
+
+    <TextView
+        android:id="@+id/txtrespuestas"
+        android:layout_width="268dp"
+        android:layout_height="298dp"
+        android:text="TextView"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <Button
+        android:id="@+id/btnmenu"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="176dp"
+        android:text="Regresar al menu Principal"
+        app:layout_constraintEnd_toEndOf="@+id/txtrespuestas"
+        app:layout_constraintStart_toStartOf="@+id/txtrespuestas"
+        app:layout_constraintTop_toBottomOf="@+id/txtrespuestas" />
+</android.support.constraint.ConstraintLayout>

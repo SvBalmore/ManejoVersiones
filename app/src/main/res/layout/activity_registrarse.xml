@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopantalla"
+    tools:context=".Registrarse">
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre completo"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="ingrese su usuario"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtnombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtnombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
+
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="ingrese su contraseña"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtuser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtuser"
+        app:layout_constraintTop_toBottomOf="@+id/txtuser" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Registro de nuevo usuario"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtrepetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Repita su contraseña"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtpass"
+        app:layout_constraintStart_toStartOf="@+id/txtpass"
+        app:layout_constraintTop_toBottomOf="@+id/txtpass" />
+
+    <Button
+        android:id="@+id/btnGuardarRegistro"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/customer_buttoms"
+        android:text="REGISTRARSE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtrepetir"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtrepetir"
+        app:layout_constraintTop_toBottomOf="@+id/txtrepetir" />
+
+    <Button
+        android:id="@+id/btnSalirRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:text="Regresar"
+        android:textColorHint="@android:color/transparent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuardarRegistro"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/btnGuardarRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarRegistro" />
+</android.support.constraint.ConstraintLayout>
